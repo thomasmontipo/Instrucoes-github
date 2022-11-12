@@ -14,11 +14,12 @@ Serão apresentados os seguintes conceitos:<br>
     <br>:arrow_right: **Comando:** "```git clone {colar o link copiado anteriormente}```"
     <br>:arrow_right:```cd {nome da pasta do github}```
     <br>:arrow_right:```git status```
-    <br>:arrow_right:```git add .```
+    <br>:arrow_right:```git add . -A```
     <br>:arrow_right:```git status```
     <br>:arrow_right:```git commit -m "{mensagem que descreva o commit}"```
     <br>:arrow_right:```git checkout -b {nome da nova branch}``` :arrow_right: Apenas na primeira vez;
-    <br>:arrow_right:```git push origin novos-arquivos```
+    <br>:arrow_right:```git pull origin {nome da branch}```
+    <br>:arrow_right:```git push origin {nome da branch}```
 
 
 ## Criando repositórios
@@ -44,10 +45,11 @@ Basta entrar no github e clicar em "Create Repository". Após, copiar o link no 
 <br>![Clonando o repository](imagens/git-status.png)<br><br>
 
 **Inserindo os arquivos na fila para commit**
-- Comando: ```git add .```
+- Comando: ```git add . -A```
     - Git :arrow_right: Comandos do git
     - add :arrow_right: adicione
-    - . :arrow_right: todos os arquivos<br>
+    - . :arrow_right: todos os arquivos
+    - -A :arrow_right: Pega os arquivos Deleted. Sem o -A se você deletar algum arquivo ele não vai deletar os arquivos.<br>
 - Rastreia todos os arquivos e os coloca na fila para commitar (tracked files)
 <br>![Clonando o repository](imagens/git-add.png)<br><br>
 
